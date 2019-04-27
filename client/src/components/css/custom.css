@@ -1,0 +1,236 @@
+/*Fonts*/
+@import './icons/flag-icon.min.css';
+
+/*Navigation*/
+.bg-avengersred {
+    background-color: #ed1d24;
+}
+.bg-black{
+    background-color: black;
+}
+.text-avengersred, .text-avengersred a{
+    color:#ed1d24;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+/*Landing Page*/
+.landing-row{
+    padding-top:200px;
+}
+.landing{
+   background: transparent!Important;
+}
+  .zoominheader {
+    position: fixed!important;
+    top: 0;
+    z-index: -1;
+    width:100%;
+    height:100%;
+    text-align:center;
+    background: url("../../img/showcase.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-animation: zoomin 10s ease-in infinite;
+    animation: zoomin 10s ease-in infinite;
+    transition: all 2s ease-in-out;
+    overflow: hidden;
+  }
+  
+  /* The innermost element*/
+  .zoomoutheader {
+    width:100%;
+    height:100%;
+    text-align:center;
+    background: none;
+    -webkit-animation: zoomout 10s ease-in infinite;
+    animation: zoomout 10s ease-in infinite;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+  }
+  
+/*Language*/
+.btn-flag-links{
+    margin-right:10px;
+}
+a.btn-flag-links:hover{
+   border:1em solid transparent;
+   transition: all .5s ease-in;
+}
+
+  /* Zoom in Keyframes */
+  @-webkit-keyframes zoomin {
+    70% {transform: scale(1);}
+    90% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+  }
+  @keyframes zoomin {
+    70% {transform: scale(1);}
+    90% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+  } /*End of Zoom in Keyframes */
+  
+  /* Zoom out Keyframes */
+  @-webkit-keyframes zoomout {
+    70% {transform: scale(1);}
+    90% {transform: scale(0.67);}
+    100% {transform: scale(1);}
+  }
+  @keyframes zoomout {
+    70% {transform: scale(1);}
+    90% {transform: scale(0.67);}
+    100% {transform: scale(1);}
+  }/*End of Zoom out Keyframes */
+  
+  /*Style for the text*/
+  .text{
+    color:red;
+    font-weight:bold; 
+  }  
+
+/*Transition*/
+.fade-in {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Footer*/
+
+footer {
+/*    position: fixed;
+    bottom: 0;*/
+    width: 100%;
+   
+}
+.footer-flag-links{
+    font-size:large;
+    margin-right: 10px;
+}
+
+#mainarticle {
+    margin-top:110px;
+}
+
+/* Form Elements*/
+input[type="text"]{
+    -webkit-appearance: none!important;
+    outline: none;
+}
+.form-group, .form-group:hover, .form-group:focus {
+    outline:0!Important;
+}
+.form-control:focus {
+    color: dodgerblue!important;
+}   
+.input {
+    background-color: transparent;
+    border-top: 0!important;
+    border-right: 0!important;
+    border-left:0!important;
+    border-bottom: 1px solid #CCC;
+    border-radius:0!Important;
+    box-sizing: border-box;
+ }
+input:focus{
+    outline: none!important;   
+    color: dodgerblue; 
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #AAA;
+  }
+  input:focus::-webkit-input-placeholder {
+    color: dodgerblue;
+  }
+  
+  .input:focus+.underline {
+    transform: scale(1);
+  }
+  
+  .underline {
+    background-color: dodgerblue;
+    display: inline-block;
+    height: 3px;
+    position:relative;
+    top: -18px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    width: 100%;
+  }
+
+  .label-required{
+      color:red;
+  }
+  .label-input{
+      font-size: small;
+      text-transform: uppercase;
+      color: #ababab;
+  }
+
+  .text-capitalize{
+      text-transform: capitalize;
+  }
+
+  blockquote{
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -1px;
+  }
+  blockquote::before{
+      content:'" ';
+  }
+  blockquote::after{
+    content:' "';
+}
+.title-round{
+    border-radius: .3em;
+    padding: 0.2em;
+}
